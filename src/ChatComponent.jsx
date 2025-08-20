@@ -78,7 +78,7 @@ const ChatComponent = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="fw-bold display-6">💬 Miruthula's AI Chat</h1>
+        <h1 className="fw-bold display-6">Miruthula's AI Chat</h1>
       </motion.header>
 
       <main className="flex-grow-1 d-flex flex-column align-items-center justify-content-between p-3">
@@ -125,7 +125,7 @@ const ChatComponent = () => {
           ))}
           {loading && (
             <div className="text-center text-info">
-              <span>✨ Generating response...</span>
+              <span>Generating response...</span>
             </div>
           )}
         </motion.div>
@@ -160,7 +160,7 @@ const ChatComponent = () => {
               transition: "0.3s",
             }}
           >
-            {loading ? "Sending..." : "🚀 Send"}
+            {loading ? "Sending..." : "Send"}
           </button>
         </motion.div>
       </main>
@@ -169,7 +169,7 @@ const ChatComponent = () => {
         className="text-white text-center py-3 shadow-lg mt-auto"
         style={{ background: "linear-gradient(90deg, #232526, #414345)" }}
       >
-        <small className="fw-bold">&copy; 2024 GM</small>
+        <small className="fw-bold">&copy; 2025 GM</small>
       </footer>
     </div>
   );
