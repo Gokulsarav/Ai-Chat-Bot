@@ -138,8 +138,7 @@ const ChatComponent = () => {
         >
           <input
             type="text"
-            value={input}
-            onKeyDown={handleKeyDown}
+            value={inputonKeyDown={handleKeyDown}
             onChange={(e) => setInput(e.target.value)}
             className="form-control border-0"
             placeholder="Type a message..."

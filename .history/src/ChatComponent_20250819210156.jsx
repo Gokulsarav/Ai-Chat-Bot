@@ -59,13 +59,6 @@ const ChatComponent = () => {
     document.title = "Ai Chat Bot";
   }, [])
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSendMessage();
-    }
-  };
-
   return (
     <div
       className="d-flex flex-column vh-100 text-light"
@@ -139,7 +132,6 @@ const ChatComponent = () => {
           <input
             type="text"
             value={input}
-            onKeyDown={handleKeyDown}
             onChange={(e) => setInput(e.target.value)}
             className="form-control border-0"
             placeholder="Type a message..."
@@ -151,6 +143,7 @@ const ChatComponent = () => {
           />
           <button
             onClick={handleSendMessage}
+            onKeyDown={handleKeyDown}
             disabled={loading}
             className="btn fw-bold text-white"
             style={{
