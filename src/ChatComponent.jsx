@@ -130,39 +130,41 @@ const ChatComponent = () => {
           )}
         </motion.div>
 
-        <motion.div
-          className="input-group mt-3 w-100 shadow-lg"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <input
-            type="text"
-            value={input}
-            onKeyDown={handleKeyDown}
-            onChange={(e) => setInput(e.target.value)}
-            className="form-control border-0"
-            placeholder="Type a message..."
-            style={{
-              borderRadius: "20px 0 0 20px",
-              padding: "15px",
-              backgroundColor: "rgba(255,255,255,0.9)",
-            }}
-          />
-          <button
-            onClick={handleSendMessage}
-            disabled={loading}
-            className="btn fw-bold text-white"
-            style={{
-              background: "linear-gradient(90deg, #00c6ff, #0072ff)",
-              borderRadius: "0 20px 20px 0",
-              padding: "15px 30px",
-              transition: "0.3s",
-            }}
+        <div className="d-flex justify-content-center mt-3">
+          <motion.div
+            className="input-group shadow-lg w-50"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </motion.div>
+            <input
+              type="text"
+              value={input}
+              onKeyDown={handleKeyDown}
+              onChange={(e) => setInput(e.target.value)}
+              className="form-control border-0"
+              placeholder="Type a message..."
+              style={{
+                borderRadius: "20px 0 0 20px",
+                padding: "15px",
+                backgroundColor: "rgba(255,255,255,0.9)",
+              }}
+            />
+            <button
+              onClick={handleSendMessage}
+              disabled={loading}
+              className="btn fw-bold text-white"
+              style={{
+                background: "linear-gradient(90deg, #00c6ff, #0072ff)",
+                borderRadius: "0 20px 20px 0",
+                padding: "15px 30px",
+                transition: "0.3s",
+              }}
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </motion.div>
+        </div>
       </main>
 
       <footer
