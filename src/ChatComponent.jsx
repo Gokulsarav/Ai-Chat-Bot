@@ -132,7 +132,7 @@ const ChatComponent = () => {
 
         <div className="d-flex justify-content-center mt-3">
           <motion.div
-            className="input-group shadow-lg w-50"
+            className="input-group shadow-lg w-100"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
