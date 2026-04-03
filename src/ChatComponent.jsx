@@ -78,7 +78,7 @@ const ChatComponent = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="fw-bold display-6">Miruthula's AI Chat</h1>
+        <h1 className="fw-bold display-6">Gokul's AI Chat</h1>
       </motion.header>
 
       <main className="flex-grow-1 d-flex flex-column align-items-center justify-content-between p-3">
